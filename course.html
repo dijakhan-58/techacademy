@@ -9,10 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+     <!-- aos animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header data-aos="fade-down" data-aos-duration="2000">
       <div class="logo">TechAcademy</div>
 
       <nav>
@@ -40,18 +42,19 @@
       <a href="#enroll" class="btn">Enroll Now</a>
     </header>
     <!-- Course section -->
-    <section class="courses-list">
+    <section class="courses-list" >
       <h2>Our Courses</h2>
       <p class="courses-intro">
         Explore our expert-led courses designed to help you master web
         development, AI, and mobile app development. Start learning today and
         build your future!
       </p>
-      <div class="course-item">
+      <!-- web dev  -->
+      <div class="course-item" data-aos="fade-up" data-aos-duration="2000">
         <div class="course-img">
           <img src="web-dev-1.jpg" alt="Web Development" />
         </div>
-        <div class="course-info">
+        <div class="course-info" >
           <h3>Web Development</h3>
           <p>
             Learn HTML, CSS, JavaScript, React, and more to build modern
@@ -60,12 +63,12 @@
           <a href="courses.html" class="btn-enroll">Explore More</a>
         </div>
       </div>
-
-      <div class="course-item">
+<!-- ai  -->
+      <div class="course-item" data-aos="fade-up" data-aos-duration="2000">
         <div class="course-img">
           <img src="ai,ml.jpg" alt="AI & Machine Learning" />
         </div>
-        <div class="course-info">
+        <div class="course-info" >
           <h3>AI & Machine Learning</h3>
           <p>
             Learn Python, AI, ML, and data science skills to get started in AI
@@ -74,8 +77,8 @@
           <a href="course.html" class="btn-enroll">Explore More</a>
         </div>
       </div>
-
-      <div class="course-item">
+<!-- MAD  -->
+      <div class="course-item" data-aos="fade-up" data-aos-duration="2000">
         <div class="course-img">
           <img src="mobddev.jpg" alt="Mobile App Development" />
         </div>
@@ -94,5 +97,9 @@
     <footer>
       <p>&copy; 2025 TechAcademy. All Rights Reserved.</p>
     </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

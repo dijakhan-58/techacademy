@@ -9,10 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+      <!-- aos animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header  data-aos="fade-down" data-aos-duration="2000">
       <div class="logo">TechAcademy</div>
 
       <nav>
@@ -42,7 +44,7 @@
 
     <!-- About Section -->
     <section class="about">
-      <div class="about-content">
+      <div class="about-content" >
         <h2>About TechAcademy</h2>
         <hr />
         <p>
@@ -72,14 +74,14 @@
           share real industry insights to help you grow with confidence.
         </p>
 
-        <p>
+        <p data-aos="fade-up" data-aos-duration="2000">
           <i class="fa-solid fa-laptop-code"></i>
           <strong> Career-Focused Training:</strong> From fundamentals to
           advanced topics, our programs are built to make you job-ready in IT
           and digital domains.
         </p>
 
-        <p>
+        <p data-aos="fade-up" data-aos-duration="2000">
           Join TechAcademy today and take the next step toward your professional
           growth and success.
         </p>
@@ -89,5 +91,9 @@
     <footer>
       <p>&copy; 2025 TechAcademy. All Rights Reserved.</p>
     </footer>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
